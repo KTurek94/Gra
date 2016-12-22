@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400;300' rel='stylesheet' type='text/css'>
+    <link href='css/latwystyle.css' rel='stylesheet'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="platwy.js"></script>
+<meta charset="utf-8">
+  </head>
+  
+  
+  <body>
+  
+  
+  
+  
+  
+<button class="startGame">START</button>
+
+<div 
+class="ruchy">
+</div>
+
+<div 
+class="plansza">
+
+</div>
+ 
+
+ <h1><a href="index.php"><img src="css/images/Menu.png"></a></h1>
+
+
+
+
+
+  </body>
+</html>
+<?php
+
+	session_start();
+	
+	if (!isset($_SESSION['zalogowany']))
+	{
+		header('Location: index.php');
+		exit();
+	}
+	
+?>
